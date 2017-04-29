@@ -5,10 +5,35 @@
   <div class="grid max-width">
     <div class="block grid--item-9">
       <div class="block__title">
-        Bloque Principal
+        Últimos Trabajos
       </div>
-      <div class="block_body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="block__body grid">
+        <?php
+          if ( have_posts() ) {
+            while (have_posts()) {
+              the_post();
+              ?>
+                <article class="block grid--item-4">
+                  <h2 class="block__title"> <?php the_title();   ?></h2>
+                  <div class="block__body">
+                  <p>  <?php the_excerpt(); ?></p>
+                <footer>
+                  <div class="">
+                    <small><?php the_tags(); ?></small>
+
+                  </div>
+                  <div class="">
+
+                    <b><?php the_author(); ?></b>
+                  </div>
+
+                </footer>
+                </article>
+              <?php
+
+            }
+          }
+         ?>
 
       </div>
     </div>
@@ -20,5 +45,3 @@
 <?php get_footer(); ?>
 
 </h1>
-  </body>
-</html>
