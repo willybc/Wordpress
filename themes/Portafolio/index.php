@@ -9,9 +9,12 @@
       </div>
       <div class="block__body grid">
         <?php
-          if ( have_posts() ) {
-            while (have_posts()) {
-              the_post();
+          $args = array('author'=> "willybc", );
+          $filter_posts = new WP_Query($args);
+
+          if($filter_posts -> have_posts()) :
+            while($filter_posts -> have_posts()) :
+              $filter_posts ->the_post();
               ?>
                 <article class="block grid--item-4">
                   <h2 class="block__title"> <?php the_title();   ?></h2>
@@ -20,20 +23,27 @@
                 <footer>
                   <div class="">
                     <small><?php the_tags(); ?></small>
-
                   </div>
                   <div class="">
-
                     <b><?php the_author(); ?></b>
                   </div>
 
+                  <a href="<?php the_permalink(); ?>">Leer Más</a>
                 </footer>
                 </article>
               <?php
-
-            }
-          }
+            endwhile;
+            else:
          ?>
+         <h4>Huy, no encontramos entradas</h4>
+         <?php
+       endif;
+       wp_reset_postdata();
+       ?>
+
+
+
+
 
       </div>
     </div>
