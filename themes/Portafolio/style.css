@@ -1227,3 +1227,11 @@ nav {
 .nav__list li a:visited {
   color: white;
 }
+
+.social{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1024px;
+}

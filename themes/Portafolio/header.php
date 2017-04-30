@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <title><?php bloginfo(title); ?></title>
     <?php wp_head(); ?>
-    <title>Portafolio</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
-
+    <script src="https://use.fontawesome.com/94da2b0a6b.js"></script>
   </head>
 
 <body>

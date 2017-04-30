@@ -1,23 +1,33 @@
 <footer class="max-width">
   <div class="block max-width">
-    <?php
-      wp_nav_menu(
-        array (
-          'theme_location' => 'bottom-menu'
-          )
-        )
-     ?>
-
     <div class="block__title">
       Footer
     </div>
     <div class="block__body">
-      <small>Footer Content</small>
+      <!-- <?php
+        wp_nav_menu(
+          array (
+            'theme_location' => 'bottom-menu',
+            'container' => 'nav',
+            'menu_class' => 'nav__list'
+            )
+          )
+       ?> -->
+      <div class="footer-icons">
+        <div class="social">
+          <ul>
+            <li><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</li>
+            <li><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Us</li>
+            <li><i class="fa fa-github" aria-hidden="true"></i> GitHub  </li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </footer>
 <?php wp_footer(); ?>
-
-
 </body>
 </html>
