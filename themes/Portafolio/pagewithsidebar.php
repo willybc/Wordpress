@@ -3,7 +3,6 @@
  ?>
 
 <?php get_header(); ?>
-<body>
         <?php
           if( have_posts()) :
             while( have_posts()) :
