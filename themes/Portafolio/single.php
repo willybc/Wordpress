@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<h1>
 
           <?php
 
@@ -20,7 +19,7 @@
                     <small><?php the_tags(); ?></small>
                   </div>
                   <div class="">
-                    <b><?php the_author(); ?></b>
+                    <?php include_once('author.php') ?>
                   </div>
 
 
@@ -37,6 +36,8 @@
        endif;
        wp_reset_postdata();
       ?>
+
+
 
 
 <?php get_footer("single"); ?>

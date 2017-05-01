@@ -29,7 +29,7 @@
                     <small><?php the_tags(); ?></small>
                   </div>
                   <div class="">
-                    <b><?php the_author(); ?></b>
+                      <b><?php the_author_posts_link(); ?></b>
                   </div>
 
                   <a href="<?php the_permalink(); ?>">Leer Más</a>
