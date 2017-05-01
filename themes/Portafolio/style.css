@@ -1,4 +1,4 @@
-/**
+ /**
   * Centers and gives a max-width with the $pagemaxwidth variable value..
   */
 .max-width {
@@ -1234,4 +1234,32 @@ nav {
   padding: 0;
   width: 100%;
   max-width: 1024px;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+}
+
+nav li a:hover {
+}
+
+nav > li {
+  float:left;
+}
+
+nav li ul {
+  display: none;
+  position:absolute;
+}
+
+.sub-menu {
+  padding: 0;
+}
+
+#menu-item-64{
+
+}
+nav li:hover > ul{
+  display: grid;
 }
