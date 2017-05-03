@@ -1,11 +1,17 @@
 <?php get_header(); ?>
-  <h1 class="page-heading max-width"><?php bloginfo(name); ?></h1>
+  <div class="">
+      <img src="http://localhost/portafolio/wp-content/uploads/2017/05/bg_thebetaisover.jpg" alt="" id="calloutHeader">
+  </div>
+  </div>
   <div class="grid max-width">
-    <div class="block grid--item-9">
+    <div class="block grid--item-9" id="containermid">
       <div class="block__title">
-        Últimos Trabajos
+        <ul class="indice">
+          <li class="blog">BLOG</li>
+          <li class="updates">UPDATES</li>
+        </ul>
       </div>
-      <div class="block__body grid">
+      <div class="block__body" id="containermidmid">
         <?php
           $args = array('author'=> "willybc", );
           $filter_posts = new WP_Query($args);
@@ -14,8 +20,9 @@
             while($filter_posts -> have_posts()) :
               $filter_posts ->the_post();
               ?>
-                <article class="block grid--item-4">
-                  <h2 class="block__title"> <?php the_title();   ?></h2>
+                <article class="block grid" id="grilla">
+                  <h1 class="block__title" id="titulo"><a href="#"> <?php the_title();   ?></a></h1>
+                  <p id="fecha"> <b><?php echo get_the_date();  ?> - Dota Team </b></p>
                   <?php
                     if(has_post_thumbnail()){
                        the_post_thumbnail();
@@ -23,16 +30,16 @@
 
                    ?>
                   <div class="block__body">
-                  <p>  <?php the_excerpt(); ?></p>
+                  <p>  <?php the_content(); ?></p>
                 <footer>
                   <div class="">
                     <small><?php the_tags(); ?></small>
                   </div>
-                  <div class="">
+                  <!-- <div class="">
                       <b><?php the_author_posts_link(); ?></b>
-                  </div>
+                  </div> -->
 
-                  <a href="<?php the_permalink(); ?>">Leer Más</a>
+                  <!-- <a href="<?php the_permalink(); ?>">Leer Más</a> -->
                 </footer>
                 </article>
               <?php

@@ -1,9 +1,12 @@
+
+
 <div class="block grid--item-3">
-  <div class="block__title">
+
+  <div class="block__title" id="titleheros">
     Fuerza
   </div>
-  <div class="block_body">
-    <ul>
+  <div class="block_body" id="heros">
+    <ul id="listahero">
       <li>Abaddon</li>
       <li>Alchemist</li>
       <li>Axe</li>
@@ -44,11 +47,11 @@
     </ul>
   </div>
 
-  <div class="block__title">
+  <div class="block__title" id="titleheros">
     Agilidad
   </div>
-  <div class="block_body">
-    <ul>
+  <div class="block_body" id="heros">
+    <ul id="listahero">
       <li>Anti-Mage</li>
       <li>Arc Warden</li>
       <li>Bloodseeker</li>
@@ -88,11 +91,11 @@
     </ul>
   </div>
 
-  <div class="block__title">
+  <div class="block__title" id="titleheros">
     Inteligencia
   </div>
-  <div class="block_body">
-    <ul>
+  <div class="block_body" id="heros">
+    <ul id="listahero">
       <li>Ancient Apparition</li>
       <li>Bane</li>
       <li>Batrider</li>

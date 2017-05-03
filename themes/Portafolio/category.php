@@ -11,7 +11,7 @@
               the_post();
               ?>
                 <article class="block grid--item-4">
-                  <h2 class="block__title"> <?php the_title();   ?></h2>
+                  <h2 class="block__title" id="titulo"> <?php the_title();   ?></h2>
                   <div class="block__body">
                   <p>  <?php the_excerpt(); ?></p>
                 <footer>
