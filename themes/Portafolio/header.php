@@ -6,7 +6,7 @@
     <title><?php bloginfo(title); ?></title>
     <?php wp_head(); ?>
     <script src="https://use.fontawesome.com/94da2b0a6b.js"></script>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
   </head>
 
 <body>

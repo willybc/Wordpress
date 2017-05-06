@@ -1,8 +1,8 @@
-<footer class="max-width">
+<footer class="max-width" id="footer2">
   <div class="block max-width">
     <div class="block__title">
-      Footer
-    </div>
+
+
     <div class="block__body">
       <!-- <?php
         wp_nav_menu(
@@ -25,6 +25,7 @@
 
       </div>
 
+    </div>
     </div>
   </div>
 </footer>

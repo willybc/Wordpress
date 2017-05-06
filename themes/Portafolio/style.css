@@ -1010,7 +1010,6 @@ body {
   line-height: 2.3;
   background-color: #9e9e9e;
   color: white;
-  padding: 0 12px;
   text-transform: uppercase;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 0;
@@ -1309,6 +1308,7 @@ h1{
 
 #titleheros{
   margin-top: 15px;
+  padding: 0 12px;
 }
 
 #fecha{
@@ -1350,6 +1350,33 @@ p{
 
 li{
   list-style: none;
+}
+
+/*#menulista{
+  border: 1px solid black;
+}*/
+
+.indice{
+}
+
+#menulista li{
+  display: inline;
+  text-align: center;
+  font-size: 21px;
+
+}
+
+#menulista ul {
+  padding: 10px;
+}
+
+.blog{
+  /*border-left: 2px solid black;*/
+
+}
+
+.updates{
+  border: 2px solid black;
 }
 
 .indice{
@@ -1613,6 +1640,8 @@ div.menu,
 -------------------------------------------------------------- */
 
 /* Main global 'theme' and typographic styles */
+
+
 body {
 	background: #010101;
 	background-repeat:no-repeat;
@@ -2784,7 +2813,7 @@ a.signupLink:hover {
 	margin-bottom:24px;
 }
 ul {
-	color:#5c5c5c;
+
 	list-style-type: none;
 	line-height:20px;
 	margin:0;
@@ -2793,11 +2822,16 @@ ul {
 	margin-left: 0;
 }
 li {
+  color:#5c5c5c;
 		margin:0;
 		padding:0;
 		padding-left:40px;
 		padding-bottom:5px;
     /*background: url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/blog_arrow.png') no-repeat 0px 3px;*/
+
+}
+
+i{
 
 }
 
@@ -3200,4 +3234,15 @@ a.navBarItem:hover {
     font-weight: normal;
     font-style: normal;
 
+}
+
+#footer2{
+  background-color: #cacaca;
+}
+
+#menulista li{
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-top: 10px;
 }
