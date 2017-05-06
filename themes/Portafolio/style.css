@@ -3280,3 +3280,23 @@ padding-top: 10px;
 #menu-menu-de-abajo a {
   padding-left: 17px;
 }
+
+.page-heading{
+  text-align: center;
+}
+
+.column{
+  border: 1px solid red;
+}
+
+#listaherocategory{
+    display: inline-flex;
+    height: 110px;
+    width: auto;
+
+}
+
+ #listaherocategory li {
+   border: 1px solid green;
+   width: 168.5px;
+ }

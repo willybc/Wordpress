@@ -1,41 +1,79 @@
 <?php get_header(); ?>
 <h1>
-  <h1 class="page-heading max-width">Categoria Especial: Ilustraciones (ID = 5)</h1>
+  <h1 class="page-heading max-width">Categoria: <?php single_cat_title(); ?></h1>
   <div class="grid max-width">
     <div class="block grid--item-12">
-      <div class="block__body grid">
-        <?php
-
-          if( have_posts()) :
-            while( have_posts()) :
-              the_post();
-              ?>
-                <article class="block grid--item-4">
-                  <h2 class="block__title" id="titulo"> <?php the_title();   ?></h2>
-                  <div class="block__body">
-                  <p>  <?php the_excerpt(); ?></p>
-                <footer>
-                  <div class="">
-                    <small><?php the_tags(); ?></small>
-                  </div>
-                  <div class="">
-                    <b><?php the_author(); ?></b>
-                  </div>
-
-                  <a href="<?php the_permalink(); ?>">Leer Más</a>
-                </footer>
-                </article>
-              <?php
-            endwhile;
-            else:
-         ?>
-         <h4>Huy, no encontramos entradas</h4>
-         <?php
-       endif;
-       wp_reset_postdata();
-       ?>
-
+      <div class="column">
+         <ul id="listaherocategory">
+           <li>Ancient Apparition</li>
+           <li>Bane</li>
+           <li>Batrider</li>
+           <li>Chen</li>
+           <li>Crystal Maiden</li>
+           <li>Dark Seer</li>
+        </ul>
       </div>
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Dazzle</li>
+          <li>Death Propet</li>
+          <li>Disruptor</li>
+          <li>Enchantress</li>
+          <li>Enigma</li>
+          <li>Invoker</li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Jakiro</li>
+          <li>Keeper of the Light</li>
+          <li>Leshrac</li>
+          <li>Lich</li>
+          <li>Lina</li>
+          <li>Lion</li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Nature's Prophet</li>
+          <li>Necrophos</li>
+          <li>Ogre Magi</li>
+          <li>Oracle</li>
+          <li>Outworld Devourer</li>
+          <li>Puck</li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Pugna</li>
+          <li>Queen of Pain</li>
+          <li>Rubick</li>
+          <li>Shadow Demon</li>
+          <li>Shadow Shaman</li>
+          <li>Silencer</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Skywrath Mage</li>
+          <li>Storm Spirit</li>
+          <li>Techies</li>
+          <li>Tinker</li>
+          <li>Visage</li>
+          <li>Warlock</li>
+      </ul>
+      </div>
+
+      <div class="column">
+        <ul id="listaherocategory">
+          <li>Windranger</li>
+          <li>Winter Wyvern</li>
+          <li>Witch Doctor</li>
+          <li>Zeus</li>
+      </ul>
+      </div>
+
     </div>
   </div>
 
