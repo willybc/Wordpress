@@ -1238,11 +1238,14 @@ nav {
 }
 
 .social{
-  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 1024px;
+}
+
+.footer-icons{
+
 }
 
 nav li a {
@@ -3255,4 +3258,8 @@ padding-top: 10px;
 
 .attachment-post-thumbnail{
   max-height: 500px;
+}
+
+.menu-menu-de-abajo-container{
+  background-image: none;
 }
