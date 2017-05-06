@@ -1217,8 +1217,6 @@ nav {
   margin: 0 auto;
   text-align: left;
 
-
-
 }
 
 .nav__list li {
@@ -3262,4 +3260,23 @@ padding-top: 10px;
 
 .menu-menu-de-abajo-container{
   background-image: none;
+}
+
+#menu-menu-de-abajo{
+  padding: 0;
+  margin-top: 0px;
+  line-height: inherit;
+  width: 100%;
+}
+
+#menu-menu-de-abajo li{
+  width: 20%;
+}
+
+.fa::before {
+	float: left;
+}
+
+#menu-menu-de-abajo a {
+  padding-left: 17px;
 }
