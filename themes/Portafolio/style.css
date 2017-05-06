@@ -1217,6 +1217,8 @@ nav {
   margin: 0 auto;
   text-align: left;
 
+
+
 }
 
 .nav__list li {
@@ -3245,4 +3247,12 @@ padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 10px;
 padding-top: 10px;
+}
+
+.menu-menu-de-arriba-container{
+    border-bottom: 2.5px solid #8A7C7C;
+}
+
+.attachment-post-thumbnail{
+  max-height: 500px;
 }
