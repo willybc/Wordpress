@@ -12,12 +12,12 @@
 
               <div class="grid max-width">
                 <div class="block grid--item-12">
-                  <div class="block__body grid">
+                  
 
 
                   <p>  <?php the_content(); ?></p>
 
-                </div>
+                
               </div>
             </div>
               <?php

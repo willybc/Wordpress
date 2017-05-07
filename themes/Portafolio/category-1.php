@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<h1>
   <h1 class="page-heading max-width">Categoria: <?php single_cat_title(); ?></h1>
   <div class="grid max-width">
     <div class="block grid--item-12">
@@ -69,5 +68,3 @@
   </div>
 
 <?php get_footer(); ?>
-
-</h1>

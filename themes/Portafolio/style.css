@@ -70,6 +70,7 @@ h6 {
   text-rendering: optimizelegibility;
 }
 
+
 h1, .h1 {
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -3300,3 +3301,68 @@ padding-top: 10px;
    border: 1px solid green;
    width: 168.5px;
  }
+
+ .shopColumn{
+   float: left;
+    width: 70px;
+    padding: 0px 5px;
+ }
+
+ .shopColumnHeaderImg{
+       margin-bottom: 10px;
+ }
+
+.redboxContent{
+  background-image: url(http://cdn.dota2.com/apps/dota2/images/heropedia/redborderbox_bg_vtile.png);
+  background-repeat: repeat-y;
+  background-position: center;
+  width: 914px;
+  margin: 0;
+  background-color: #232425;
+}
+
+.redboxTop, .redboxBottom {
+    background-image: url(http://cdn.dota2.com/apps/dota2/images/heropedia/redborderbox_top.png);
+    margin: 0;
+    width: 914px;
+    height: 23px;
+}
+
+.redboxBottom {
+    background-image: url(http://cdn.dota2.com/apps/dota2/images/heropedia/redborderbox_bottom.png);
+}
+
+#itemsHeader {
+    padding: 8px 10px;
+    width: 854px;
+    height: auto;
+}
+
+#itemsHeader {
+    background-color: #000000;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 814px;
+    height: 80px;
+    padding: 8px 30px 3px 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.page-heading
+{
+  color:white;
+}
+
+#containeritems{
+  float: right;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#contenedor-principal-items{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
